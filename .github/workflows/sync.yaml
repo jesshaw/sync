@@ -1,4 +1,4 @@
-name: Sync
+name: SyncGitee
 on: push
 jobs:
   sync:
@@ -8,5 +8,5 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SYNC }}
         with:
-          source-repo: "git@github.com:jesshaw/sync.git"
+          source-repo: "https://github.com/apache/shardingsphere.git"
           destination-repo: "git@gitee.com:jesshaw/sync.git"
