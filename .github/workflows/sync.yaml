@@ -8,5 +8,5 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SYNC }}
         with:
-          source-repo: "https://github.com/jesshaw/sync.git" 
+          source-repo: "https://github.com/baomidou/mybatis-plus-samples.git" 
           destination-repo: "git@gitee.com:jesshaw/sync.git"
